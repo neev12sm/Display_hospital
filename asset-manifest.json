@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Display_hospital/static/css/main.850de03c.css",
+    "main.js": "/Display_hospital/static/js/main.78dfef18.js",
+    "static/media/doctor.png": "/Display_hospital/static/media/doctor.3621de05061736be4133.png",
+    "static/media/office.png": "/Display_hospital/static/media/office.f5079ca3eb25bbc4cc50.png",
+    "index.html": "/Display_hospital/index.html",
+    "main.850de03c.css.map": "/Display_hospital/static/css/main.850de03c.css.map",
+    "main.78dfef18.js.map": "/Display_hospital/static/js/main.78dfef18.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.850de03c.css",
+    "static/js/main.78dfef18.js"
+  ]
+}
