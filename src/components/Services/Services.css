@@ -1,0 +1,227 @@
+/* Services.css */
+
+/* Our Services Section */
+.services-section {
+  background-color: #f5fdff;
+  padding: 80px 20px;
+  text-align: center;
+  overflow-x: hidden;
+}
+.services-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #062b63;
+  margin-bottom: 16px;
+}
+.services-description {
+  font-size: 16px;
+  color: #062b63;
+  margin-bottom: 48px;
+}
+.services-card-wrapper {
+  padding-bottom: 8px;
+}
+.services-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.service-card {
+  background-color: #ffffff;
+  padding: 32px 24px;
+  border-radius: 20px;
+  width: 220px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.service-card.hovered {
+  background-color: #007bff;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+.service-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.icon {
+  margin-bottom: 24px;
+}
+.cta {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Innovation Section */
+.innovation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background-color: #fff;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.innovation-left {
+  flex: 1;
+  min-width: 300px;
+}
+.innovation-heading {
+  font-size: 42px;
+  font-weight: bold;
+  color: #062b63;
+  margin-bottom: 20px;
+}
+.innovation-paragraph {
+  font-size: 16px;
+  color: #062b63;
+  margin-bottom: 30px;
+}
+.innovation-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.innovation-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  min-width: 300px;
+}
+.innovation-card {
+  background-color: #f9fdff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 24px 16px;
+  width: 240px;
+  text-align: center;
+}
+.innovation-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 16px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.innovation-card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #062b63;
+}
+
+/* Specialist Section */
+.specialist-section {
+  background: #f5fbff;
+  padding: 80px 20px;
+  text-align: center;
+}
+.specialist-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #062b63;
+  margin-bottom: 16px;
+}
+.specialist-description {
+  font-size: 16px;
+  color: #062b63;
+  margin-bottom: 48px;
+}
+.specialist-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.specialist-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  width: 200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  text-align: left;
+}
+.specialist-image-placeholder {
+  background-color: #b2dff4;
+  height: 180px;
+  width: 100%;
+}
+.specialist-card-content {
+  padding: 16px;
+}
+.specialist-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #062b63;
+  margin-bottom: 4px;
+}
+.specialist-specialty {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .innovation-wrapper {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+  .innovation-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .innovation-card {
+    margin: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .service-card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .innovation-heading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    width: 100%;
+  }
+  .innovation-wrapper {
+    padding: 40px 16px;
+  }
+  .innovation-left, .innovation-right {
+    width: 100%;
+    align-items: center;
+  }
+  .innovation-card {
+    width: 100%;
+  }
+  .specialist-card {
+    width: 100%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

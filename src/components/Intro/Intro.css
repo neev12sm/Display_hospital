@@ -1,0 +1,138 @@
+.Intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  margin-top: 6rem;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+/* left side */
+.i-left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.i-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.i-name > :nth-child(2) {
+  color: rgb(8, 8, 143);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.i-name > span:nth-child(n+3) {
+  font-weight: 100;
+  font-size: 14px;
+  color: rgb(9, 9, 98);
+  margin-top: 5px;
+}
+
+.i-button {
+  width: 12rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  background-color: rgb(72, 90, 255);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.i-departments-link {
+  color: rgb(72, 90, 255);
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+
+/* right side card */
+.i-right-card {
+  width: 320px;
+  height: 360px;
+  background-color: rgb(214, 219, 255);
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+/* blur background */
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .Intro {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .i-left, .i-right-card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .i-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .i-departments-link {
+    display: block;
+    text-align: center;
+    margin: 1rem auto 0;
+  }
+
+  .i-right-card {
+    margin-top: 2rem;
+  }
+
+  .blur {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .i-name > :nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .i-name > span {
+    font-size: 13px;
+  }
+
+  .i-button {
+    font-size: 0.9rem;
+    height: 2.2rem;
+  }
+
+  .i-departments-link {
+    font-size: 0.95rem;
+  }
+}
